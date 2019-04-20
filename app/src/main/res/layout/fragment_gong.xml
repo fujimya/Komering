@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/biru">
+    <LinearLayout
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.uncopt.android.widget.text.justify.JustifiedTextView
+            android:textStyle="bold"
+            android:layout_margin="10dp"
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Alat musik ini terbuat dari bahan dasar kuningan. Gong bisa dimainkan secara tunggal maupun berkelompok melaraskannya dengan alat musik lainnya. Dalam musik tradisional, gong difungsikan sebagai suara bass. Gong digunakan pula sebagai media pemberitahuan atau untuk mengumumkan sesuatu kepada khalayak ramai.
+Alat Musik Tradisional Sumatra Selatan merupakan alat musik peninggalan orang jaman dahulu yang sekarang masih ada sisa-sisa peninggalanya dan kita sebagai penerusnya harus mempertahankan dan melestarikan sisia-sisia peninggalan ini."/>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/gong"
+            app:cardBackgroundColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            app:cardCornerRadius="15dp">
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/gong2"
+                    android:layout_width="180dp"
+                    android:layout_height="180dp" />
+
+                <TextView
+                    android:layout_marginTop="15dp"
+                    android:textSize="28sp"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:text="GONG"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+</ScrollView>

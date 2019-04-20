@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.fujimiya.komering.KuisActivity"
+    android:orientation="vertical"
+    android:background="@color/grey"
+    android:id="@+id/ll">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:background="@color/colorPrimary"
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v7.widget.CardView
+        app:cardBackgroundColor="@color/green"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        app:cardCornerRadius="10dp">
+        <LinearLayout
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <com.uncopt.android.widget.text.justify.JustifiedTextView
+                android:id="@+id/Soal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="vertical"
+                android:textSize="22sp"
+                android:fontFamily="casual"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:text="Apakah nama pakaian adat pengantin pria dan wanita yang sering dipakai suku Daya?"/>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white"
+                android:layout_margin="1dp"/>
+            <TextView
+                android:onClick="aklik"
+                android:layout_margin="10dp"
+                android:id="@+id/a"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"
+                android:text="A. Aesen Gede"
+                android:textSize="18sp"/>
+            <TextView
+                android:onClick="bklik"
+                android:layout_margin="10dp"
+                android:id="@+id/b"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"
+                android:text="B. Kain Songket"
+                android:textSize="18sp"/>
+            <TextView
+                android:onClick="cklik"
+                android:layout_margin="10dp"
+                android:id="@+id/c"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"
+                android:text="C. Baju Kurung"
+                android:textSize="18sp"/>
+            <TextView
+                android:onClick="dklik"
+                android:layout_margin="10dp"
+                android:id="@+id/d"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"
+                android:text="D. Semua salah"
+                android:textSize="18sp"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white"
+                android:layout_margin="5dp"/>
+            <android.support.v7.widget.CardView
+                android:onClick="selanjutnya"
+                android:layout_gravity="right|bottom"
+                app:cardCornerRadius="10dp"
+                android:layout_marginRight="15dp"
+                android:layout_alignParentRight="true"
+                app:cardBackgroundColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/ket"
+                    android:layout_margin="10dp"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:text="Selanjutnya"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

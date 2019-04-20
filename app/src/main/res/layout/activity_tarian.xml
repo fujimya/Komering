@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.fujimiya.mediaux.MainActivity"
+    android:orientation="vertical"
+    android:background="@color/grey"
+    android:gravity="center"
+    android:id="@+id/ll">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v7.widget.CardView
+        app:cardBackgroundColor="@color/green"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        app:cardCornerRadius="10dp">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <android.support.v7.widget.CardView
+                    app:cardBackgroundColor="@color/yello"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    app:cardCornerRadius="10dp">
+                    <com.github.rtoshiro.view.video.FullscreenVideoLayout
+                        android:layout_margin="10dp"
+                        android:id="@+id/videoview"
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp" />
+                </android.support.v7.widget.CardView>
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:textColor="#fff"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:text="TARI TANGGAI"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/white"
+                    android:layout_margin="10dp"/>
+
+                <TextView
+                    android:textColor="#fff"
+                    android:textAlignment="center"
+                    android:text="Tari tanggai adalah sebuah tarian yang disajikan untuk menyambut tamu yang telah memenuhi undangan. Tari tanggai biasanya dipertontonkan dalam acara pernikahan adat daerah Palembang termasuk Suku daya Ogan Komering Ulu Selatan dimana tari tersebut masuk dalam seni tari. Tari tanggai menggambarkan keramahan, dan rasa hormat masyarakat  atas kehadiran sang tamu dan dalam tari ini tersirat sebuah makna ucapan selamat datang dari orang yang mempunyai acara kepada para tamu. "
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/white"
+                    android:layout_margin="10dp"/>
+
+
+            </LinearLayout>
+        </ScrollView>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

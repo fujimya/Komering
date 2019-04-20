@@ -1,0 +1,71 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:background="@color/green"
+        android:gravity="center"
+        android:id="@+id/ll">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <android.support.v7.widget.CardView
+            app:cardBackgroundColor="@color/green"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center">
+                <!--<TextView-->
+                    <!--android:textColor="@color/white"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:textStyle="bold"-->
+                    <!--android:layout_marginTop="5dp"-->
+                    <!--android:text="SIANG-SIANGAN"-->
+                    <!--android:textSize="28sp"/>-->
+
+                <ImageView
+                    android:scaleType="centerCrop"
+                    android:layout_width="match_parent"
+                    android:layout_height="299dp"
+                    android:src="@drawable/sahsahan" />
+
+                <TextView
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:layout_marginTop="2dp"
+                    android:text="Adat Siang-siangan Ogan Komering Ulu Selatan"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/white"
+                    android:layout_margin="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Acara SIANG-SIANGAN Dengan pengantin Pria atau wanita merupakan acara makan bersama dengan bujang gadis ini merupakan acara perspisahan dengan si pengantin pria dan wanita untuk melepaskan masa bujang dan gadisnya bahwa dia akan beralih  status. Gotong Royong Pasca Pernikahan yaitu SAH-SAHAN alat Wajan, Panci, Tikar yang berhubungan dengan sarana dan prasarana yang kotor akan dibersihkan oleh Bujang dan Gadis yang telah di Batok Oleh bujang dan gadis tuan Rumah."
+                    android:padding="5dp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"/>
+
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </ScrollView>
+    </LinearLayout>
+
+</FrameLayout>

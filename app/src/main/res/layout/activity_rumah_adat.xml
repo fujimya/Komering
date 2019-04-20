@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.fujimiya.komering.RumahAdatActivity"
+    android:orientation="vertical"
+    android:background="@color/grey"
+    android:gravity="center"
+    android:id="@+id/ll">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:background="@color/colorPrimary"
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v7.widget.CardView
+        app:cardBackgroundColor="@color/green"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+            <!--<TextView-->
+                <!--android:textColor="@color/white"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textStyle="bold"-->
+                <!--android:layout_marginTop="5dp"-->
+                <!--android:text="RUMAH ADAT"-->
+                <!--android:textSize="28sp"/>-->
+
+            <ImageView
+                android:scaleType="centerCrop"
+                android:layout_width="match_parent"
+                android:layout_height="299dp"
+                android:src="@drawable/rumah" />
+            <TextView
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:text="Rumah Ulu Ogan Komering Selatan"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white"
+                android:layout_margin="10dp"/>
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Rumah Ulu Ogan Ulu Komering sepenuhnya menggunakan bahan kayu atau papan, mulai dari tiang penyangga (kayu gelondongan), tangga, dinding, pintu, dan jendela. Atap rumah dibuat dari daun enau dengan teknik rangkai-tumpuk, tetapi mengingat daya tahan dan bahayanya yang riskan kebakaran, sekarang atap daun ini diganti dengan atap genteng."
+                    android:padding="5dp"
+                    android:textColor="@color/white"/>
+            </ScrollView>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
